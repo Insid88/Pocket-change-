@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f8fa">
+    <title>Get a repository-reading token</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #1f2328;
+        background: #f6f8fa;
+      }
+
+      body {
+        box-sizing: border-box;
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem 1rem;
+        place-items: center;
+      }
+
+      main {
+        width: min(100%, 34rem);
+        padding: clamp(1.5rem, 5vw, 2.5rem);
+        background: #fff;
+        border: 1px solid #d1d9e0;
+        border-radius: 1rem;
+        box-shadow: 0 8px 30px #1f232812;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: clamp(1.75rem, 6vw, 2.25rem);
+        line-height: 1.15;
+      }
+
+      p,
+      li {
+        line-height: 1.6;
+      }
+
+      .button {
+        display: inline-block;
+        margin: 0.5rem 0 1rem;
+        padding: 0.8rem 1.1rem;
+        border-radius: 0.5rem;
+        background: #1f883d;
+        color: #fff;
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      .button:hover {
+        background: #1a7f37;
+      }
+
+      .button:focus-visible {
+        outline: 3px solid #0969da;
+        outline-offset: 3px;
+      }
+
+      .notice {
+        padding: 0.9rem 1rem;
+        border-left: 4px solid #0969da;
+        background: #f6f8fa;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        color: #59636e;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Get a repository-reading token</h1>
+      <p>
+        Create a personal access token through GitHub to get read-only access
+        to repository contents for the <strong>octodemo</strong> organization.
+      </p>
+      <p>
+        <a
+          class="button"
+          href="https://github.com/settings/personal-access-tokens/new?name=Repo-reading+token&amp;description=Just+contents%3Aread&amp;target_name=octodemo&amp;expires_in=45&amp;contents=read"
+        >Continue to GitHub</a>
+      </p>
+      <h2>What to expect</h2>
+      <ol>
+        <li>GitHub opens a form with the token name and read-only contents permission prefilled.</li>
+        <li>Review the organization and permissions, then create the token in GitHub.</li>
+        <li>Copy it and store it somewhere secure. GitHub may only show it once.</li>
+      </ol>
+      <p class="notice">
+        Your token is created and managed by GitHub. This page does not ask for,
+        receive, or store your token. Never paste a token into this page or share it.
+      </p>
+      <footer>Tokens are personal credentials. Only create one if you need repository access.</footer>
+    </main>
+  </body>
+</html>
