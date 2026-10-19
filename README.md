@@ -10,3 +10,11 @@ token; this project does not collect or store tokens.
 
 Review the organization and permissions on GitHub before creating a token.
 Store the token securely and never share it.
+
+## Publishing
+
+Pushes to `main` deploy `index.html` to GitHub Pages via
+`.github/workflows/pages.yml`. Enable it once under Settings → Pages →
+Source: "GitHub Actions". Note that Pages sites are public by default.
+Before sharing, click through the button to confirm the prefilled form works
+and that the organization allows fine-grained tokens.
